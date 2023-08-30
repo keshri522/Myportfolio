@@ -1,19 +1,19 @@
-// import HeaderImage from "../../assets/header.jpg";
-// import data from "./data";
-// import "./header.css";
+import HeaderImage from "../../assets/header.jpg";
+import data from "./data";
+import "./header.css";
 
 const Header = () => {
   return (
     <header id="header">
       <div className="container header__container">
         <div className="header__profile">
-          {/* <img src={HeaderImage} alt="Header Portait" /> */}
+          <img src={HeaderImage} alt="Header Portait" />
         </div>
-        <h3>Hajia Bintu</h3>
+        <h3>Rahul Keshri</h3>
         <p>
-          You are a click away from building your dream website or web app. Send
-          me the details of your project for a modern, mobile responsive, highly
-          performant website today!
+          Passionate about coding how to code efficiently with excellent problem
+          solving skills and learning new skills ability to perform well with a
+          team. Developing Website Comlete Mern Stack developer
         </p>
         <div className="header__cta">
           <a href="#contact" className="btn primary">
@@ -24,7 +24,7 @@ const Header = () => {
           </a>
         </div>
         <div className="header__socials">
-          {/* {data.map((item) => (
+          {data.map((item) => (
             <a
               key={item.id}
               href={item.link}
@@ -33,7 +33,7 @@ const Header = () => {
             >
               {item.icon}
             </a>
-          ))} */}
+          ))}
         </div>
       </div>
     </header>
