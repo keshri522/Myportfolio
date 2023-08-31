@@ -13,7 +13,7 @@ const About = () => {
     AOS.init({ duration: 2000 });
   });
   return (
-    <section id="about" data-aos="fade-up">
+    <section id="about" data-aos="fade-in">
       <div className="container about__container">
         <div className="about__left">
           <div className="about__portrait">

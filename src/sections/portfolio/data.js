@@ -4,6 +4,7 @@ import shopping from "../../assets/shopping.PNG";
 import Image6 from "../../assets/project6.jpg";
 import Image8 from "../../assets/project8.jpg";
 import Capture from "../../assets/Capture.PNG";
+import Youtube from "../../assets/subscriber.png";
 const data = [
   {
     id: 1,
@@ -48,7 +49,7 @@ const data = [
     image: Image8,
     title: "Express Ejs Todo (Backend)",
     desc: "This is todo applicaton in which i used Express Template engine to buikld this todo.I have not deploy the frontend it has multiple routes like /new new item will create random routes.",
-    demo: "https://rahul-keshri.onrender.com",
+    demo: "https://github.com/keshri522/Express-Ejs-Todo",
     github: "https://github.com/keshri522",
   },
 
@@ -59,6 +60,15 @@ const data = [
     title: "Chat Application(Mern Stack)",
     desc: "The chat application is a real-time messaging platform that allows users to communicate with each other instantly. It utilizes modern web technologies to provide a seamless and secure user experience.Socket.IO is employed for enabling real-time communication between clients and the server. It establishes a bidirectional connection that allows instant message updates without requiring constant requests to the server.By integrating React, Socket.IO, bcrypt, JSON Web Tokens, and Chakra UI, this chat application offers a responsive, real-time, and secure messaging experience for users.",
     demo: "https://keshri522.github.io/Chat-App-Mern/#/",
+    github: "https://github.com/keshri522",
+  },
+  {
+    id: 9,
+    category: "backend",
+    image: Youtube,
+    title: "Youtube Subscriber(backend)",
+    desc: "This is the youtube Subscriber project which contains three endpoint.First api will give all the subscriber which in the mongo db.This is Just Replica of Youtube Projects",
+    demo: "https://github.com/keshri522/YoutubeSubscriber",
     github: "https://github.com/keshri522",
   },
 ];
