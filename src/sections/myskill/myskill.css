@@ -1,0 +1,45 @@
+.contact__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.contact__container img {
+  width: calc(15% - 2.5rem); /* 25% width for each title, minus the gap */
+  aspect-ratio: 1/1;
+  color: black;
+  display: flex;
+  flex-basis: 15%;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-1);
+}
+
+.contact__container img:hover {
+  /* background: transparent; */
+  /* border-color: var(--color-primary); */
+  /* color: var(--color-primary); */
+  transform: translateY(-0.5rem);
+}
+
+/* MEDIA QUERIES (phones) */
+/* @media screen and (max-width: 600px) {
+  .contact__container {
+    gap: 1.5rem;
+  }
+} */
+/* Responsive Media Query for Mobile Devices */
+@media (max-width: 600px) {
+  .contact__container {
+    flex-direction: column; /* Stack titles vertically on small screens */
+    gap: 1rem; /* Reduce the gap between titles */
+  }
+
+  .contact__container img {
+    width: 100%; /* Full width for titles on mobile */
+    font-size: 1.5rem; /* Decrease font size for mobile */
+  }
+}

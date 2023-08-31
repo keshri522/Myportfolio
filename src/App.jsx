@@ -36,7 +36,7 @@ import Header from "./sections/header/Header";
 import About from "./sections/about/About";
 import Services from "./sections/services/Services";
 import Portfolio from "./sections/portfolio/Portfolio";
-
+import Myskill from "./sections/myskill/Myskill";
 import FAQs from "./sections/faqs/FAQs";
 import Contact from "./sections/contact/Contact";
 import Footer from "./sections/footer/Footer";
@@ -89,6 +89,7 @@ const App = () => {
       <Navbar />
       <Header />
       <About />
+      <Myskill />
       <Services />
       <Portfolio />
       {/* <Testimonials /> */}
