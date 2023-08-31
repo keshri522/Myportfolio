@@ -49,6 +49,7 @@
 
 .about__right p {
   margin-bottom: 0.8rem;
+  font-weight: bold;
 }
 
 .about__right .btn {
