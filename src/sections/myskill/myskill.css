@@ -5,10 +5,10 @@
   gap: 3rem;
 }
 
-.contact__container img {
+.contact__container .flip-container {
   width: calc(15% - 2.5rem); /* 25% width for each title, minus the gap */
   aspect-ratio: 1/1;
-  color: black;
+  color: white;
   display: flex;
   flex-basis: 15%;
   align-items: center;
@@ -16,30 +16,47 @@
   font-size: 2rem;
   border: 2px solid transparent;
   border-radius: var(--border-radius-1);
+  position: relative;
+  perspective: 1000px;
 }
 
-.contact__container img:hover {
-  /* background: transparent; */
-  /* border-color: var(--color-primary); */
-  /* color: var(--color-primary); */
-  transform: translateY(-0.5rem);
+.contact__container .flip-container img,
+.contact__container .flip-container .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.7s;
 }
 
-/* MEDIA QUERIES (phones) */
-/* @media screen and (max-width: 600px) {
-  .contact__container {
-    gap: 1.5rem;
-  }
-} */
-/* Responsive Media Query for Mobile Devices */
+.contact__container .flip-container .back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  background-color: black;
+  backface-visibility: hidden;
+  font-size: 1.5rem;
+}
+
+.contact__container .flip-container:hover img {
+  transform: rotateY(180deg);
+}
+
+.contact__container .flip-container:hover .back {
+  transform: rotateY(0deg);
+}
+
 @media (max-width: 600px) {
   .contact__container {
-    flex-direction: column; /* Stack titles vertically on small screens */
-    gap: 1rem; /* Reduce the gap between titles */
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0.7rem 0.8rem;
   }
 
-  .contact__container img {
-    width: 100%; /* Full width for titles on mobile */
-    font-size: 1.5rem; /* Decrease font size for mobile */
+  .contact__container .flip-container {
+    width: 100%;
+    font-size: 1.5rem;
   }
 }

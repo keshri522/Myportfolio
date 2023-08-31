@@ -18,7 +18,7 @@ const data = [
   {
     id: 2,
 
-    title: "Redux/@toolkit",
+    title: "Redutoolkit",
     Image: Redux,
   },
   { id: 3, title: "Bootstrap", Image: bootstrap },

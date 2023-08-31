@@ -41,7 +41,7 @@ const data = [
     title: "Shopping Website(Mern Stack)",
     desc: " E-commerce Platform: A Seamless Shopping Experience. Welcome to our innovative e-commerce website that offers a seamless shopping experience to all users. Our platform combines user-friendly design with advanced features to provide a convenient and efficient way to shop online. Here's a glimpse of what you can expect:",
     demo: "https://rahulecommercewebsite.netlify.app",
-    github: "https://github.com/egattor",
+    github: "https://github.com/keshri522",
   },
   {
     id: 7,
