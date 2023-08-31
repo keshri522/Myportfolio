@@ -4,7 +4,7 @@ import "./faqs.css";
 
 const FAQs = () => {
   return (
-    <section id="faqs">
+    <section id="faqs" data-aos="fade-up">
       <h2>Frequently Asked Questions</h2>
       <p>
         Here are some questions I usually get. Click to toggle the answer, and

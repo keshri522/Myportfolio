@@ -4,10 +4,16 @@ import { HiDownload } from "react-icons/hi";
 import data from "./data"; // this is the data importing
 import Card from "../../components/Card";
 import "./about.css"; // this is style for this components only
-
+import AOS from "aos"; // this is the package which gives us some loading style
+import "aos/dist/aos.css"; // this is the css package which gives us more style
+import { useEffect } from "react";
 const About = () => {
+  useEffect(() => {
+    // we have use the style in this because once our page loads or mount then our useeffect will run
+    AOS.init({ duration: 2000 });
+  });
   return (
-    <section id="about">
+    <section id="about" data-aos="fade-up">
       <div className="container about__container">
         <div className="about__left">
           <div className="about__portrait">
