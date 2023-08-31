@@ -51,7 +51,16 @@ const About = () => {
             project updates, and deliver solutions tailored to their specific
             needs.
           </p>
-          <a href={CV} download className="btn primary">
+          {/* <a href={CV} download className="btn primary">
+            Download CV <HiDownload />
+          </a> */}
+          <a
+            onClick={() => {
+              alert("Cv is adding soon");
+            }}
+            download
+            className="btn primary"
+          >
             Download CV <HiDownload />
           </a>
         </div>

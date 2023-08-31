@@ -2,14 +2,14 @@ import Logo from "../../assets/logo.jpg";
 import data from "./data";
 import { IoIosColorPalette } from "react-icons/io";
 import "./navbar.css";
-
+import Mypic from "../../assets/aboutpic.jpg";
 const Navbar = () => {
   // this is the navbar which contain all the navbars items in the data which improts
   return (
     <nav>
       <div className="container nav__container">
         <a href="index.html" className="nav__logo">
-          <img src={Logo} alt="Logo" />
+          <img src={Mypic} alt="Logo" />
         </a>
         <ul className="nav__menu">
           {data.map((item) => (
@@ -18,9 +18,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <button id="theme__icon">
+        {/* <button id="theme__icon">
           <IoIosColorPalette />
-        </button>
+        </button> */}
       </div>
     </nav>
   );
