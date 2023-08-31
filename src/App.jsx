@@ -8,7 +8,7 @@ import Portfolio from "./sections/portfolio/Portfolio";
 import FAQs from "./sections/faqs/FAQs";
 import Contact from "./sections/contact/Contact";
 import Footer from "./sections/footer/Footer";
-import FloatingNav from "./sections/floating-nav/FloatingNav";
+// import FloatingNav from "./sections/floating-nav/FloatingNav";
 // this is main which will handle all the componets globally
 const App = () => {
   return (
@@ -21,8 +21,9 @@ const App = () => {
 
       <FAQs />
       <Contact />
+
+      {/* <FloatingNav /> */}
       <Footer />
-      <FloatingNav />
     </main>
   );
 };
