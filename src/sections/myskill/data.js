@@ -13,6 +13,8 @@ import node from "./pics/node.png";
 import React from "./pics/React.png";
 import Redux from "./pics/reduxpic.png";
 import sql from "./pics/sql.png";
+import github from "./pics/github.png";
+import Postman from "./pics/postman.png";
 const data = [
   { id: 1, title: "React", Image: React },
   {
@@ -55,6 +57,8 @@ const data = [
   },
   { id: 14, title: "Bcrypt", Image: bbb },
   { id: 15, title: "Axios", Image: axiox },
+  { id: 16, title: "Postman", Image: Postman },
+  { id: 17, title: "Github", Image: github },
 ];
 
 export default data;

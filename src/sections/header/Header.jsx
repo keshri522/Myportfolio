@@ -15,7 +15,12 @@ const Header = () => {
         <div className="header__profile" data-aos="fade-up">
           <img src={HeaderImage} alt="Header Portait" />
         </div>
-        <h3 data-aos="fade-up">Rahul Keshri</h3>
+        <h3
+          style={{ fontFamily: "cursive", color: "magenta" }}
+          data-aos="fade-up"
+        >
+          Rahul Keshri
+        </h3>
         <p data-aos="fade-up">
           Passionate about coding how to code efficiently with excellent problem
           solving skills and learning new skills ability to perform well with a

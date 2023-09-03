@@ -24,7 +24,7 @@ import data from "./data";
 
 const Myskill = () => {
   return (
-    <section id="contact" data-aos="fade-in">
+    <section id="contact" data-aos="zoom-in">
       <h2>My KeySkills</h2>
       <p>These are my skills that I have learned on my journey</p>
       <div className="container contact__container">
