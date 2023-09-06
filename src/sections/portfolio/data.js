@@ -5,6 +5,7 @@ import Image6 from "../../assets/project6.jpg";
 import Image8 from "../../assets/project8.jpg";
 import Capture from "../../assets/Capture.PNG";
 import Youtube from "../../assets/subscriber.png";
+import Movies from "../../assets/movies.PNG";
 const data = [
   {
     id: 1,
@@ -70,6 +71,15 @@ const data = [
     desc: "This is the youtube Subscriber project which contains three endpoint.First api will give all the subscriber which in the mongo db.This is Just Replica of Youtube Projects",
     demo: "https://github.com/keshri522/YoutubeSubscriber",
     github: "https://github.com/keshri522",
+  },
+  {
+    id: 10,
+    category: "Frontend",
+    image: Movies,
+    title: "Showing Movies Detais(backend)",
+    desc: "This is simple frontend UI project in which have showed all the movies Details and add the functionlity of Searching.In this project I used Reract and debouncing in the Input Button and also used Redux toolkit for state management of Input button",
+    demo: "https://showmoviesdetails.netlify.app/",
+    github: "https://github.com/keshri522/Show-Movies",
   },
 ];
 
