@@ -1,5 +1,6 @@
 import AboutImage from "../../assets/aboutpic.jpg";
-import CV from "../../assets/Rahul.pdf";
+
+import CV from "../../assets/keshri.pdf";
 import { HiDownload } from "react-icons/hi";
 import data from "./data"; // this is the data importing
 import Card from "../../components/Card";

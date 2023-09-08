@@ -6,6 +6,7 @@ import Image8 from "../../assets/project8.jpg";
 import Capture from "../../assets/Capture.PNG";
 import Youtube from "../../assets/subscriber.png";
 import Movies from "../../assets/movies.PNG";
+
 const data = [
   {
     id: 1,
@@ -74,9 +75,9 @@ const data = [
   },
   {
     id: 10,
-    category: "Frontend",
+    category: "frontend",
     image: Movies,
-    title: "Showing Movies Detais(backend)",
+    title: "Showing Movies Detais(frontend)",
     desc: "This is simple frontend UI project in which have showed all the movies Details and add the functionlity of Searching.In this project I used Reract and debouncing in the Input Button and also used Redux toolkit for state management of Input button",
     demo: "https://showmoviesdetails.netlify.app/",
     github: "https://github.com/keshri522/Show-Movies",
