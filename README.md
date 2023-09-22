@@ -22,7 +22,7 @@ This is my Portfolio Website.
 
 
 ## Deployment Link
-- https://650d86f635313c439d935ece--unique-stardust-92e243.netlify.app/
+-https://650d8a9aa176e4484374b37c--inquisitive-fairy-5abe2c.netlify.app/
 
 
 ## Deployment
