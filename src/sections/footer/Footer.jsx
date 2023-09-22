@@ -1,17 +1,18 @@
 import { links, socials } from "./data";
 import "./footer.css";
+import { React } from "react";
 
 const Footer = () => {
   return (
     <footer>
       <div className="container footer__container" data-aos="fade-up">
-        <ul className="nav__menu">
+        {/* <ul className="nav__menu">
           {links.map((fLink) => (
             <li key={fLink.id}>
               <a href={fLink.link}>{fLink.title}</a>
             </li>
           ))}
-        </ul>
+        </ul> */}
         <div className="footer__socials">
           {socials.map((social) => (
             <a
@@ -26,7 +27,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__copyright">
-        <small>2022 EGATOR TUTORIALS &copy; All Rights Reserved</small>
+        <small>CREATED BY RAHUL KESHRI &copy; All Rights Reserved</small>
       </div>
     </footer>
   );

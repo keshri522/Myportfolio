@@ -1,4 +1,5 @@
 import HeaderImage from "../../assets/header.jpg";
+import Typewriter from "typewriter-effect";
 import data from "./data";
 import { useEffect } from "react";
 import "./header.css";
@@ -9,6 +10,20 @@ const Header = () => {
     // we have use the style in this because once our page loads or mount then our useeffect will run
     AOS.init({ duration: 2000 });
   });
+  // this function will gives us a typewritter effect in name
+  const Typewrittereffect = () => {
+    // Return the Typewriter component here
+    return (
+      <Typewriter
+        options={{
+          strings: ["Rahul Keshri", "Mern Stack Developer", "Problem Solver"],
+          autoStart: true,
+          loop: true,
+        }}
+      />
+    );
+  };
+
   return (
     <header id="header">
       <div className="container header__container">
@@ -19,7 +34,8 @@ const Header = () => {
           style={{ fontFamily: "cursive", color: "magenta" }}
           data-aos="fade-up"
         >
-          Rahul Keshri
+          {/* Rahul Keshri */}
+          {Typewrittereffect()}
         </h3>
         <p data-aos="fade-up">
           Passionate about coding how to code efficiently with excellent problem

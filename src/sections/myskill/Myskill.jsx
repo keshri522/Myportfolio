@@ -21,12 +21,44 @@
 import React from "react";
 import "./myskill.css";
 import data from "./data";
-
+import Typewriter from "typewriter-effect";
 const Myskill = () => {
+  const Typewrittereffect = () => {
+    // Return the Typewriter component here
+    return (
+      <Typewriter
+        options={{
+          strings: [
+            "React",
+            "Bootstrap",
+            "Css",
+            "Html",
+            "JavaScript",
+            "Node js",
+            "Express js",
+            "MongoDb",
+            "Sql",
+            "Ejs Template",
+            "DSA",
+            "JWT",
+            "Bcrypt",
+            "Axios",
+            "Postman",
+            "Github",
+          ],
+          autoStart: true,
+          loop: true,
+        }}
+      />
+    );
+  };
   return (
-    <section id="contact" data-aos="zoom-in">
+    <section id="skill" data-aos="zoom-in">
       <h2>My KeySkills</h2>
-      <p>These are my skills that I have learned on my journey</p>
+      <p style={{ color: "green", fontWeight: "bold" }}>
+        {" "}
+        {Typewrittereffect()}
+      </p>
       <div className="container contact__container">
         {data.map((title) => (
           <div className="flip-container" key={title.id}>

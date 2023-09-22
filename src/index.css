@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
 :root {
   --primary-hue: 1000;
   --black-lightness: 15%;
@@ -52,7 +57,7 @@ body {
 
 /* GENERAL SECTION STYLES */
 section {
-  padding: 10rem 0;
+  padding: 2rem;
   background: var(--color-light);
   transition: var(--transition);
 }
@@ -117,6 +122,9 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+a {
+  text-decoration: none;
 }
 
 /* GENERAL BUTTON STYLES */
