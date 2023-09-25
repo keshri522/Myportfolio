@@ -6,6 +6,7 @@ import Image8 from "../../assets/project8.jpg";
 import Capture from "../../assets/Capture.PNG";
 import Youtube from "../../assets/subscriber.png";
 import Movies from "../../assets/movies.PNG";
+import Auth from "../../assets/authtication.jpg";
 
 const data = [
   {
@@ -81,6 +82,15 @@ const data = [
     desc: "This is simple frontend UI project in which have showed all the movies Details and add the functionlity of Searching.In this project I used Reract and debouncing in the Input Button and also used Redux toolkit for state management of Input button",
     demo: "https://showmoviesdetails.netlify.app/",
     github: "https://github.com/keshri522/Show-Movies",
+  },
+  {
+    id: 4,
+    category: "Full Stack ",
+    image: Auth,
+    title: "Jwt and bcrypt authorizations",
+    desc: "This is demo of how JWT and BCRYPT works in this app i am authenticate user and authorized user with the help of jwt token and also hashing password with bcrypt",
+    demo: "https://keshri522.github.io/Authrization-jwt-and-bcrypt/",
+    github: "https://github.com/keshri522/Authrization-jwt-and-bcrypt",
   },
 ];
 
