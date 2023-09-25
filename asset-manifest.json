@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Myportfolio/static/css/main.c9b606df.css",
-    "main.js": "/Myportfolio/static/js/main.550ef61e.js",
+    "main.js": "/Myportfolio/static/js/main.80eb50cc.js",
     "static/media/movies.PNG": "/Myportfolio/static/media/movies.9d63cf8336d4fca53282.PNG",
     "static/media/resumes.jpg": "/Myportfolio/static/media/resumes.e12420b0f37191967c1a.jpg",
     "static/media/shopping.PNG": "/Myportfolio/static/media/shopping.4ca55f7d628ef941d6fd.PNG",
@@ -9,7 +9,7 @@
     "static/media/project6.jpg": "/Myportfolio/static/media/project6.4e8ab78eb40a0f03bc88.jpg",
     "static/media/flashcard.png": "/Myportfolio/static/media/flashcard.937912798cf0a2bf7e71.png",
     "static/media/project8.jpg": "/Myportfolio/static/media/project8.16ed43794953534af05c.jpg",
-    "static/media/Resume.pdf": "/Myportfolio/static/media/Resume.af714d941486dd64deb6.pdf",
+    "static/media/MyResume.pdf": "/Myportfolio/static/media/MyResume.ef8e31fb83a6be3a44b2.pdf",
     "static/media/header.jpg": "/Myportfolio/static/media/header.8caef08d1c2ecc9eebc2.jpg",
     "static/media/aboutpic.jpg": "/Myportfolio/static/media/aboutpic.f2db9894b2fe34d2e766.jpg",
     "static/media/bbb.jpg": "/Myportfolio/static/media/bbb.82d62960bfb682d921d7.jpg",
@@ -25,10 +25,10 @@
     "static/media/node.png": "/Myportfolio/static/media/node.a944ef19fe84ba7371f2.png",
     "index.html": "/Myportfolio/index.html",
     "main.c9b606df.css.map": "/Myportfolio/static/css/main.c9b606df.css.map",
-    "main.550ef61e.js.map": "/Myportfolio/static/js/main.550ef61e.js.map"
+    "main.80eb50cc.js.map": "/Myportfolio/static/js/main.80eb50cc.js.map"
   },
   "entrypoints": [
     "static/css/main.c9b606df.css",
-    "static/js/main.550ef61e.js"
+    "static/js/main.80eb50cc.js"
   ]
 }
