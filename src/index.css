@@ -160,7 +160,7 @@ button::p
 
 .btn.primary {
   background: var(--color-primary);
-  /* text color always white that's why i didn't use a variable color */
+
   color: white;
 }
 
