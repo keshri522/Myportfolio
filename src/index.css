@@ -60,6 +60,8 @@ section {
   padding: 2rem;
   background: var(--color-light);
   transition: var(--transition);
+  /* margin-bottom: 3rem; */
+  margin-top: 2rem;
 }
 
 section:nth-child(even) {
@@ -174,58 +176,6 @@ button::p
   padding: 0.5rem 1.2rem;
 }
 
-/* for the second buttons */
-.btns {
-  display: inline-block;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  background: var(--color-light);
-  color: var(--color-black);
-  padding: 0.6rem 2.5rem;
-  border: 2px solid transparent;
-  border-radius: var(--border-radius-2);
-  cursor: pointer;
-}
-.btns.primary {
-  background: var(--color-primary);
-  /* text color always white that's why i didn't use a variable color */
-  color: white;
-  text-align: center;
-}
-
-.btns:hover {
-  background-color: transparent;
-  border-color: var(--color-light);
-  transform: translateY(-0.5rem);
-}
-
-.btns.white {
-  background: var(--color-white);
-}
-
-.btns.white:hover {
-  background: transparent;
-  border-color: var(--color-white);
-}
-
-.btns.primary {
-  background: var(--color-primary);
-  /* text color always white that's why i didn't use a variable color */
-  color: white;
-}
-
-.btns.primary:hover {
-  background: transparent;
-  border-color: var(--color-primary);
-  color: var(--color-primary);
-}
-
-.btns.sm {
-  padding: 0.5rem 1.2rem;
-}
-
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 1024px) {
   body {
@@ -272,13 +222,10 @@ button::p
     padding: 0.6rem 1.5rem;
     /* width: 100%; */
   }
-  .btns {
-    /* padding: 0.6rem 1.5rem; */
-    width: 100%;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    margin-left: auto;
-    margin-right: auto;
+
+  .btn.primary {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   section > p {
