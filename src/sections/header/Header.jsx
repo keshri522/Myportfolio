@@ -1,4 +1,5 @@
 import HeaderImage from "../../assets/header.jpg";
+
 import Typewriter from "typewriter-effect";
 import data from "./data";
 import { useEffect } from "react";

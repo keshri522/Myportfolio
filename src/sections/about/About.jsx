@@ -1,5 +1,6 @@
 import AboutImage from "../../assets/aboutpic.jpg";
-
+import Cerficates from "../../assets/certificate.png";
+import Cerficatepdf from "../../assets/pdf.pdf";
 import CV from "../../assets/MyResume.pdf";
 import { HiDownload } from "react-icons/hi";
 import data from "./data"; // this is the data importing
@@ -8,6 +9,7 @@ import "./about.css"; // this is style for this components only
 import AOS from "aos"; // this is the package which gives us some loading style
 import "aos/dist/aos.css"; // this is the css package which gives us more style
 import { useEffect } from "react";
+
 const About = () => {
   useEffect(() => {
     // we have use the style in this because once our page loads or mount then our useeffect will run
@@ -18,7 +20,33 @@ const About = () => {
       <div className="container about__container">
         <div className="about__left">
           <div className="about__portrait">
-            <img src={AboutImage} alt="About Image" />
+            <img src={Cerficates} alt="About Image" />
+            <div className="ok">
+              <button
+                onClick={() => {
+                  window.open(
+                    "https://certificates.almabetter.com/en/verify/52274678109268",
+                    "_blank"
+                  );
+                }}
+                download
+                className="btns primary"
+              >
+                View Certificate
+              </button>
+              <button
+                onClick={() => {
+                  window.open(
+                    "https://grow.almabetter.com/my-certificates",
+                    "_blank"
+                  );
+                }}
+                download
+                className="btns primary"
+              >
+                Show Certificates
+              </button>
+            </div>
           </div>
         </div>
         <div className="about__right">

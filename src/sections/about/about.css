@@ -4,17 +4,21 @@
   gap: 12%;
 }
 
-.about__portrait {
+/* .about__portrait {
   height: fit-content;
   max-height: 40rem;
   border: 1rem solid var(--color-white);
   transition: var(--transition);
-}
+} */
 
 .about__portrait:hover {
   border-width: 0;
 }
-
+.ok {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
 .about__cards {
   margin: 3rem 0 1.5rem;
   display: grid;
@@ -57,7 +61,7 @@
 }
 
 /* MEDIA QUERIES (tablets) */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 2000px) {
   .about__left {
     /* display: none; */
   }
@@ -80,5 +84,9 @@
 
   .about__right .btn {
     margin-top: 2rem;
+  }
+  .ok {
+    flex-direction: column;
+    width: 100%;
   }
 }

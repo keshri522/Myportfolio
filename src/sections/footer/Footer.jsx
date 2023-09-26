@@ -27,7 +27,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__copyright">
-        <small>CREATED BY RAHUL KESHRI &copy; All Rights Reserved</small>
+        <small>
+          Made with <span style={{ color: "red" }}>❤</span> by Rahul keshri
+        </small>
       </div>
     </footer>
   );

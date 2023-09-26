@@ -19,7 +19,8 @@ header {
   height: 22rem;
   border-radius: 7rem 7rem 4rem 4rem;
   overflow: hidden;
-  margin-bottom: 1.5rem;
+
+  margin-bottom: 1rem;
 }
 
 .header__container p {
