@@ -15,6 +15,9 @@ This is my Portfolio Website.
 - React.js.
 - AOS animate of scroll
 - Css
+- React Toastify
+- Feedback form
+- validation
 ## About Project
 - This is a Capstone Project - Flashcard Generater.
 
