@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { toast } from "react-toastify";
 const FeedbackModal = (props) => {
   const { showModal, handleClose } = props; // Destructure props to access showModal and handleClose
   const [values, Setvalues] = useState({
@@ -116,11 +116,12 @@ const FeedbackModal = (props) => {
                 </button>
                 <button
                   onClick={() => {
-                    alert("ThankYour for Your feedback");
+                    toast.success("Thankyou for your valuable feedback");
                     handleClose();
                   }}
                   type="submit"
                   className="btn btn-primary"
+                  disabled={!values.email || !values.name || !values.textarea}
                 >
                   Submit
                 </button>

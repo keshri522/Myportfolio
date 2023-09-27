@@ -8,7 +8,8 @@ import FAQs from "./sections/faqs/FAQs";
 import Contact from "./sections/contact/Contact";
 import Footer from "./sections/footer/Footer";
 import FloatingNav from "./sections/floating-nav/FloatingNav";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useRef, useState, useEffect } from "react";
 
 const App = () => {
@@ -52,6 +53,7 @@ const App = () => {
       ref={mainRef}
     >
       <Navbar />
+      <ToastContainer></ToastContainer>
       <Header />
       <About />
       <Myskill />
