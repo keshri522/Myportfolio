@@ -80,7 +80,7 @@ const data = [
     image: Movies,
     title: "Showing Movies Detais(frontend)",
     desc: "This is simple frontend UI project in which have showed all the movies Details and add the functionlity of Searching.In this project I used Reract and debouncing in the Input Button and also used Redux toolkit for state management of Input button",
-    demo: "https://showmoviesdetails.netlify.app/",
+    demo: "https://keshri522.github.io/MoviesList/",
     github: "https://github.com/keshri522/Show-Movies",
   },
   {
