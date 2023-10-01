@@ -60,18 +60,25 @@ const About = () => {
               </Card>
             ))}
           </div>
-          <p>
-            Building projects my clients love have always been my passion. Being
-            in the web development industry for over 1 years and serving more
-            than 4 happy clients, I'm always motivated to do more!
+          <p style={{ fontWeight: "bold" }}>
+            Enthusiastic and results-driven MERN Stack Developer with a strong
+            foundation in web development and a passion for creating efficient,
+            scalable, and visually appealing applications. Proficient in
+            building dynamic and responsive web solutions using MongoDB,
+            Express.js, React, and Node.js. Eager to leverage my technical
+            skills and creativity to contribute to innovative projects and
+            collaborate with cross-functional teams
           </p>
-          <p>
-            Hi, my name is Rahul Keshri from India, Bihar. I'm a full-stack web
-            developer with a Bachelors degree with MatheMatics. My top priority
-            is to get your business online the right way, giving you
-            industry-standard design and all the functionality you need to
-            operate smoothly online. Get in touch today with the details of your
-            project let's get started! Check out my resume below!
+          <p style={{ fontWeight: "bold" }}>
+            Hi, my name is Rahul keshri from India. I'm a full-stack web
+            developer with a Bachelors degree in Science.Built and deployed
+            responsive and user-friendly websites for small businesses using the
+            MERN stack, resulting in increased online visibility and customer
+            engagement. Implemented data storage and retrieval functionalities
+            using MongoDB, ensuring smooth data management and scalability.
+            Collaborated closely with clients to gather requirements, provide
+            project updates, and deliver solutions tailored to their specific
+            needs.
           </p>
           <a href={CV} download className="btn primary">
             Download CV <HiDownload />
