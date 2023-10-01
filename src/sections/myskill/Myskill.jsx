@@ -61,8 +61,15 @@ const Myskill = () => {
       </p>
       <div className="container contact__container">
         {data.map((title) => (
-          <div className="flip-container" key={title.id}>
-            <img src={title.Image} alt={title.title} />
+          <div className="flip-container shadow" key={title.id}>
+            <img
+              style={{
+                boxShadow: "2px 2px 12px 5px black",
+                borderRadius: "8px",
+              }}
+              src={title.Image}
+              alt={title.title}
+            />
             <div className="back">{title.title}</div>
           </div>
         ))}

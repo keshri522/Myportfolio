@@ -51,7 +51,7 @@ const Header = () => {
             My Work
           </a>
         </div>
-        <div className="header__socials">
+        {/* <div className="header__socials">
           {data.map((item) => (
             <a
               key={item.id}
@@ -62,7 +62,7 @@ const Header = () => {
               {item.icon}
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
     </header>
   );

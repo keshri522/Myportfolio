@@ -62,13 +62,13 @@ const About = () => {
           </div>
           <p>
             Building projects my clients love have always been my passion. Being
-            in the web development industry for over 3 years and serving more
-            than 70 happy clients worldwide, I'm always motivated to do more!
+            in the web development industry for over 1 years and serving more
+            than 4 happy clients, I'm always motivated to do more!
           </p>
           <p>
-            Hi, my name is Hajia Bintu from Accra, Ghana. I'm a full-stack web
-            developer with a Bachelors degree in Computer Science. My top
-            priority is to get your business online the right way, giving you
+            Hi, my name is Rahul Keshri from India, Bihar. I'm a full-stack web
+            developer with a Bachelors degree with MatheMatics. My top priority
+            is to get your business online the right way, giving you
             industry-standard design and all the functionality you need to
             operate smoothly online. Get in touch today with the details of your
             project let's get started! Check out my resume below!
