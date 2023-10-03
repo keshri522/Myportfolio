@@ -53,7 +53,12 @@ const Myskill = () => {
     );
   };
   return (
-    <section id="skill" data-aos="zoom-in">
+    <section
+      id="skill"
+      data-aos="fade-left"
+      data-aos-offset="200"
+      data-aos-easing="ease-in-sine"
+    >
       <h2>My KeySkills</h2>
       <p style={{ color: "green", fontWeight: "bold" }}>
         {" "}
