@@ -16,12 +16,7 @@ const About = () => {
     AOS.init({ duration: 2000 });
   });
   return (
-    <section
-      id="about"
-      data-aos="fade-right"
-      data-aos-offset="200"
-      data-aos-easing="ease-in-sine"
-    >
+    <section id="about" data-aos="fade-up">
       <div className="container about__container">
         <div className="about__left">
           <div className="about__portrait">

@@ -23,12 +23,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section
-      id="portfolio"
-      data-aos="fade-left"
-      data-aos-offset="200"
-      data-aos-easing="ease-in-sine"
-    >
+    <section id="portfolio" data-aos="fade-up">
       <h2>Recent Projects</h2>
       <p>
         Check out some of the projects I recently worked on them. Use the

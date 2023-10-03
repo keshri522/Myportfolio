@@ -4,12 +4,7 @@ import "./services.css";
 
 const Services = () => {
   return (
-    <section
-      id="services"
-      data-aos="fade-right"
-      data-aos-offset="200"
-      data-aos-easing="ease-in-sine"
-    >
+    <section id="services" data-aos="fade-up">
       <h2>My Services</h2>
       <p>I give you the best in all the services below</p>
       <div className="container services__container">
