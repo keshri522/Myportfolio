@@ -1,5 +1,6 @@
-import HeaderImage from "../../assets/header.jpg";
-
+import HeaderImage from "../../assets/dp.jpg";
+import { HiDownload } from "react-icons/hi";
+import CV from "../../assets/MyResume.pdf";
 import Typewriter from "typewriter-effect";
 import data from "./data";
 import { useEffect } from "react";
@@ -28,9 +29,15 @@ const Header = () => {
   return (
     <header id="header">
       <div className="container header__container">
-        <div className="header__profile" data-aos="fade-up">
-          <img src={HeaderImage} alt="Header Portait" />
+        <div className="header__profile first" data-aos="fade-up">
+          <img className="image" src={HeaderImage} alt="Header Portait" />
+          <div className="overlay">
+            <a href={CV} download className="">
+              Download CV <HiDownload />
+            </a>
+          </div>
         </div>
+
         <h3
           style={{ fontFamily: "cursive", color: "magenta" }}
           data-aos="fade-up"

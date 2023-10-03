@@ -31,7 +31,7 @@ const About = () => {
                 );
               }}
               download
-              className="btn primary"
+              className="button-87"
             >
               View Certificate
             </button>
@@ -43,7 +43,7 @@ const About = () => {
                 );
               }}
               download
-              className="btn primary"
+              className="button-87"
             >
               Show Certificates
             </button>

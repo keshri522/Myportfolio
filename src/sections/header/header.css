@@ -3,7 +3,8 @@ header {
   height: calc(100vh - 5rem);
   display: grid;
   place-items: center;
-  background: var(--color-white);
+  /* background: var(--color-white); */
+  background-image: linear-gradient(#dcdde1, #8c7ae6, #7f8fa6);
   transition: var(--transition);
 }
 
@@ -13,15 +14,52 @@ header {
   align-items: center;
   position: relative;
 }
-
+/* 
 .header__profile {
-  width: 18rem;
-  height: 22rem;
-  border-radius: 7rem 7rem 4rem 4rem;
+  width: 16rem;
+  height: 20rem;
+  border-radius: 6rem 6rem 2rem 2rem;
+  box-shadow: 3px 3px 4px 2px silver;
   overflow: hidden;
 
   margin-bottom: 1rem;
+} */
+.header__profile {
+  position: relative;
+  width: 16rem;
+  height: 20rem;
+  border-radius: 6rem 6rem 2rem 2rem;
+  box-shadow: 3px 3px 4px 2px silver;
+  overflow: hidden;
+  margin-bottom: 1rem;
 }
+
+.header__profile .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 0.7s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.header__profile:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+/* .header__profile .overlay a {
+  font-family: cursive;
+  color: magenta;
+  margin: 0;
+} */
 
 .header__container p {
   width: 35rem;

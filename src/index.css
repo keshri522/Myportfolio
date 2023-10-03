@@ -14,7 +14,7 @@
 }
 
 :root {
-  --primary-hue: 230;
+  --primary-hue: 650;
   --black-lightness: 15%;
   --dark-lightness: 44%;
   --light-lightness: 94%;
@@ -61,11 +61,14 @@ section {
   background: var(--color-light);
   transition: var(--transition);
   /* margin-bottom: 3rem; */
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  /* background-color: aqua; */
+  background-image: linear-gradient(#dcdde1, #8c7ae6, #7f8fa6);
 }
 
 section:nth-child(even) {
-  background: var(--color-white);
+  /* background: var(--color-white); */
+  background-image: linear-gradient(#dcdde1, #8c7ae6, #7f8fa6);
 }
 
 section > h2 {
@@ -175,7 +178,48 @@ button::p
 .btn.sm {
   padding: 0.5rem 1.2rem;
 }
+.button-87 {
+  background-color: #0a6bff;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: rgba(1, 60, 136, 0.5) 0 -1px 3px 0 inset,
+    rgba(0, 44, 97, 0.1) 0 3px 6px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inherit;
+  font-family: "Space Grotesk", -apple-system, system-ui, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  min-height: 56px;
+  min-width: 120px;
+  padding: 14px 18px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all 0.4s cubic-bezier(0.3, 0.7, 0.45, 2);
+}
 
+.button-87:hover {
+  background-color: #065dd8;
+  transform: translateY(-2px);
+}
+
+/* media query for laptop or pc for buttons */
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .button-87 {
+    padding: 4px 35px;
+    margin: 3px;
+  }
+}
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 1024px) {
   body {
@@ -222,11 +266,19 @@ button::p
     padding: 0.6rem 1.5rem;
     /* width: 100%; */
   }
-
-  .btn.primary {
+  .button-87 {
+    display: flex;
+    justify-content: center;
+    padding: 0.6rem 1.5rem;
+    width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
   }
+
+  /* .btn.primary {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  } */
 
   section > p {
     width: var(--container-width-md);
