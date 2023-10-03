@@ -39,7 +39,7 @@ const Header = () => {
         </div>
 
         <h3
-          style={{ fontFamily: "cursive", color: "magenta" }}
+          style={{ fontFamily: "sans-serif", color: "White" }}
           data-aos="fade-up"
         >
           {/* Rahul Keshri */}
