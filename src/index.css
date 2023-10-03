@@ -12,7 +12,7 @@
   color: black;
   font-weight: bold;
 }
-
+/* the is css for body */
 :root {
   --primary-hue: 1700;
   --black-lightness: 15%;
