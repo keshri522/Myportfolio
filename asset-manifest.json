@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/Myportfolio/static/css/main.a3dce20d.css",
-    "main.js": "/Myportfolio/static/js/main.06b6793c.js",
+    "main.js": "/Myportfolio/static/js/main.ab577653.js",
     "static/media/movies.PNG": "/Myportfolio/static/media/movies.9d63cf8336d4fca53282.PNG",
     "static/media/pdf.pdf": "/Myportfolio/static/media/pdf.5e653aeb666a43025eed.pdf",
+    "static/media/dp hotels.jpg": "/Myportfolio/static/media/dp hotels.b462571eb0ae87adb649.jpg",
     "static/media/certificate.png": "/Myportfolio/static/media/certificate.f08d2079e181f2f33719.png",
     "static/media/resumes.jpg": "/Myportfolio/static/media/resumes.e12420b0f37191967c1a.jpg",
     "static/media/shopping.PNG": "/Myportfolio/static/media/shopping.4ca55f7d628ef941d6fd.PNG",
@@ -27,10 +28,10 @@
     "static/media/node.png": "/Myportfolio/static/media/node.a944ef19fe84ba7371f2.png",
     "index.html": "/Myportfolio/index.html",
     "main.a3dce20d.css.map": "/Myportfolio/static/css/main.a3dce20d.css.map",
-    "main.06b6793c.js.map": "/Myportfolio/static/js/main.06b6793c.js.map"
+    "main.ab577653.js.map": "/Myportfolio/static/js/main.ab577653.js.map"
   },
   "entrypoints": [
     "static/css/main.a3dce20d.css",
-    "static/js/main.06b6793c.js"
+    "static/js/main.ab577653.js"
   ]
 }
