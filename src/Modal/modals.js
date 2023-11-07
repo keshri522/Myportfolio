@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
+import Spinner from "../Spinner/Spinner";
+import "../Spinner/spinner.css";
 const FeedbackModal = (props) => {
+  const [show, Setshow] = useState(false);
   const { showModal, handleClose } = props; // Destructure props to access showModal and handleClose
   const [values, Setvalues] = useState({
     name: "",
@@ -11,11 +14,13 @@ const FeedbackModal = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // clear the state;
-    Setvalues({
-      name: "",
-      email: "",
-      textarea: "",
-    });
+    setTimeout(() => {
+      Setvalues({
+        name: "",
+        email: "",
+        textarea: "",
+      });
+    }, 2000);
     // Add form submission logic here
   };
   const handlechange = (e) => {
@@ -36,19 +41,19 @@ const FeedbackModal = (props) => {
         style={{ display: showModal ? "block" : "none" }}
       >
         <div className="modal-dialog" role="document">
-          <div className="modal-content">
+          <div style={{ backgroundColor: "silver" }} className="modal-content">
             <form onSubmit={handleSubmit}>
               <div className="modal-header">
-                <h5 className="modal-title">Feedback Form</h5>
-                <button
+                <h5 className="modal-title">Your Valuable Feedback</h5>
+                {/* <button
                   type="button"
                   className="close"
                   data-dismiss="modal"
                   aria-label="Close"
                   onClick={handleClose}
                 >
-                  <span aria-hidden="true">&times;</span>
-                </button>
+                  <span aria-hidden="true">&times;</span>x
+                </button> */}
               </div>
               <div className="modal-body">
                 <div className="mb-3">
@@ -116,14 +121,19 @@ const FeedbackModal = (props) => {
                 </button>
                 <button
                   onClick={() => {
-                    toast.success("Thankyou for your valuable feedback");
-                    handleClose();
+                    // added contidnally showing of spinner based on the state
+                    Setshow(true);
+                    setTimeout(() => {
+                      toast.success("Thankyou for your valuable feedback");
+                      handleClose();
+                      Setshow(false);
+                    }, 2000);
                   }}
                   type="submit"
                   className="btn btn-primary"
                   disabled={!values.email || !values.name || !values.textarea}
                 >
-                  Submit
+                  {show ? <Spinner></Spinner> : "Submit"}
                 </button>
               </div>
             </form>
