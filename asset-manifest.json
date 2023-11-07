@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Myportfolio/static/css/main.a3dce20d.css",
-    "main.js": "/Myportfolio/static/js/main.ab577653.js",
+    "main.css": "/Myportfolio/static/css/main.42459737.css",
+    "main.js": "/Myportfolio/static/js/main.b843d5d5.js",
     "static/media/movies.PNG": "/Myportfolio/static/media/movies.9d63cf8336d4fca53282.PNG",
     "static/media/pdf.pdf": "/Myportfolio/static/media/pdf.5e653aeb666a43025eed.pdf",
     "static/media/dp hotels.jpg": "/Myportfolio/static/media/dp hotels.b462571eb0ae87adb649.jpg",
@@ -27,11 +27,11 @@
     "static/media/reduxpic.png": "/Myportfolio/static/media/reduxpic.b3b939c66aecf7d53967.png",
     "static/media/node.png": "/Myportfolio/static/media/node.a944ef19fe84ba7371f2.png",
     "index.html": "/Myportfolio/index.html",
-    "main.a3dce20d.css.map": "/Myportfolio/static/css/main.a3dce20d.css.map",
-    "main.ab577653.js.map": "/Myportfolio/static/js/main.ab577653.js.map"
+    "main.42459737.css.map": "/Myportfolio/static/css/main.42459737.css.map",
+    "main.b843d5d5.js.map": "/Myportfolio/static/js/main.b843d5d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3dce20d.css",
-    "static/js/main.ab577653.js"
+    "static/css/main.42459737.css",
+    "static/js/main.b843d5d5.js"
   ]
 }
