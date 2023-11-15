@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Myportfolio/static/css/main.42459737.css",
-    "main.js": "/Myportfolio/static/js/main.b843d5d5.js",
+    "main.css": "/Myportfolio/static/css/main.ba9f6ea6.css",
+    "main.js": "/Myportfolio/static/js/main.224d97c2.js",
     "static/media/movies.PNG": "/Myportfolio/static/media/movies.9d63cf8336d4fca53282.PNG",
     "static/media/pdf.pdf": "/Myportfolio/static/media/pdf.5e653aeb666a43025eed.pdf",
     "static/media/dp hotels.jpg": "/Myportfolio/static/media/dp hotels.b462571eb0ae87adb649.jpg",
@@ -20,18 +20,17 @@
     "static/media/dp.jpg": "/Myportfolio/static/media/dp.731ed9f94f0b2aacf808.jpg",
     "static/media/bootstrap.png": "/Myportfolio/static/media/bootstrap.b74e54d4897791a51840.png",
     "static/media/css.jpg": "/Myportfolio/static/media/css.6263b355b587c01273e6.jpg",
-    "static/media/logo.jpg": "/Myportfolio/static/media/logo.ce63ba75f4177d9803fc.jpg",
     "static/media/React.png": "/Myportfolio/static/media/React.eb0f58cf7cb8f4d8912b.png",
     "static/media/mongo.png": "/Myportfolio/static/media/mongo.f9efb4cf07a7dc8a900d.png",
     "static/media/html.png": "/Myportfolio/static/media/html.68a0575ad03998b35b3d.png",
     "static/media/reduxpic.png": "/Myportfolio/static/media/reduxpic.b3b939c66aecf7d53967.png",
     "static/media/node.png": "/Myportfolio/static/media/node.a944ef19fe84ba7371f2.png",
     "index.html": "/Myportfolio/index.html",
-    "main.42459737.css.map": "/Myportfolio/static/css/main.42459737.css.map",
-    "main.b843d5d5.js.map": "/Myportfolio/static/js/main.b843d5d5.js.map"
+    "main.ba9f6ea6.css.map": "/Myportfolio/static/css/main.ba9f6ea6.css.map",
+    "main.224d97c2.js.map": "/Myportfolio/static/js/main.224d97c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.42459737.css",
-    "static/js/main.b843d5d5.js"
+    "static/css/main.ba9f6ea6.css",
+    "static/js/main.224d97c2.js"
   ]
 }
