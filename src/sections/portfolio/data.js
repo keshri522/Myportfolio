@@ -8,6 +8,7 @@ import Youtube from "../../assets/subscriber.png";
 import Movies from "../../assets/movies.PNG";
 import Auth from "../../assets/authtication.jpg";
 import hotels from "../../assets/dp hotels.jpg";
+import infinite from "../../assets/infinite.png";
 const data = [
   {
     id: 1,
@@ -93,13 +94,22 @@ const data = [
     github: "https://github.com/keshri522/Authrization-jwt-and-bcrypt",
   },
   {
-    id: 4,
+    id: 11,
     category: "Full Stack ",
     image: hotels,
     title: "Hotel Booking with Payment page",
     desc: "This is a Hotel booking web-apps where user can post and create or edit the hotels with Authentication also added Payment system with",
     demo: "https://keshri522.github.io/Hotel_booking/",
     github: "https://github.com/keshri522/Hotel_booking",
+  },
+  {
+    id: 12,
+    category: "frontend",
+    image: infinite,
+    title: "Infinite Scrolling Demo",
+    desc: "This is Demo of Infinite Scrolling in React using Grid Layout with Vanilla Css",
+    demo: "https://keshri522.github.io/InfinitScrollingDemo/",
+    github: "https://github.com/keshri522/InfinitScrollingDemo",
   },
 ];
 

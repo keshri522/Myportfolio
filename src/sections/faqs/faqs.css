@@ -26,13 +26,16 @@
 }
 .gitstats {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 1.9rem;
+  background-image: linear-gradient(#dcdde1, #8c7ae6, #7f8fa6);
+  flex-wrap: wrap;
 }
 .imgSizes {
-  width: 500px;
+  width: 470px;
   margin: 5px;
   height: auto;
+
   border: 2px solid orange;
 }
 
@@ -46,6 +49,15 @@
 @media screen and (max-width: 1024px) {
   .faqs__container {
     grid-template-columns: 1fr;
+  }
+  /* .gitstats {
+    flex-direction: column;
+  } */
+  .imgSizes {
+    width: 100%;
+    margin: 5px;
+    height: auto;
+    border: 2px solid orange;
   }
 }
 
@@ -73,5 +85,6 @@
   .gitstats {
     flex-direction: column;
     padding: 0px;
+    flex-wrap: nowrap;
   }
 }
