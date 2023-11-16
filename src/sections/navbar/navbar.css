@@ -39,16 +39,28 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  height: 7px;
-  background-color: orange;
+  height: 9px;
+  background-color: #4cd137;
+
   width: 0px;
-  border-radius: 10px;
+
   transition: width 0.7s;
 }
 .animation {
   position: relative;
   transition: all ease 0.3s;
   color: white;
+}
+.feedback {
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  transition: all ease-in-out 0.4s;
+  font-size: 2rem;
+}
+.feedback:hover {
+  color: goldenrod;
+  transform: scale(1.1);
 }
 
 .animation::after {

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FeedbackModal from "../../Modal/modals";
 import data from "./data";
 import "./navbar.css";
-
+import { Tooltip } from "antd";
 const Navbar = () => {
   const [showModal, setShowModal] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -35,15 +35,21 @@ const Navbar = () => {
   return (
     <nav>
       <div className="container nav__container">
-        <label style={{ cursor: "pointer", color: "white" }}>
-          <input
-            type="button"
-            style={{ display: "none" }}
-            onClick={handleShowModal}
-          />
-          <FontAwesomeIcon icon={faMessage}></FontAwesomeIcon>
-        </label>
+        <Tooltip color="orange" title="Feedback Form">
+          <label style={{ cursor: "pointer", color: "white" }}>
+            <input
+              type="button"
+              style={{ display: "none" }}
+              onClick={handleShowModal}
+            />
+            <FontAwesomeIcon
+              className="feedback"
+              icon={faMessage}
+            ></FontAwesomeIcon>
 
+            {/* <h3 className="feedback">Feedback</h3> */}
+          </label>
+        </Tooltip>
         <FeedbackModal showModal={showModal} handleClose={handleCloseModal} />
 
         {/* Progress bar at the top */}
