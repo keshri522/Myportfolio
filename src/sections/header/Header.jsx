@@ -48,7 +48,7 @@ const Header = () => {
         <p data-aos="fade-up">
           Passionate about coding how to code efficiently with excellent problem
           solving skills and learning new skills ability to perform well with a
-          team. Developing Website Comlete Mern Stack developer
+          team. Developing Website Complete Mern Stack developer.
         </p>
         <div className="header__cta" data-aos="fade-up">
           <a href="#contact" className="btn primary">

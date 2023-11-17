@@ -14,57 +14,37 @@ import { useRef, useState, useEffect } from "react";
 
 const App = () => {
   const mainRef = useRef();
-  const [showFloatingNav, setShowFloatingNav] = useState(true);
-  const [siteYPostion, setSiteYPosition] = useState(0);
-
-  const showFloatingNavHandler = () => {
-    setShowFloatingNav(true);
-  };
-
-  const hideFloatingNavHandler = () => {
-    setShowFloatingNav(false);
-  };
-
-  // check if floating nav should be shown or hidden
-  const floatingNavToggleHandler = () => {
-    // check if we scrolled up or down at least 20px
-    if (
-      siteYPostion < mainRef?.current?.getBoundingClientRect().y - 20 ||
-      siteYPostion > mainRef?.current?.getBoundingClientRect().y + 20
-    ) {
-      showFloatingNavHandler();
-    } else {
-      hideFloatingNavHandler();
-    }
-
-    setSiteYPosition(mainRef?.current?.getBoundingClientRect().y);
+  const [showNavbar, setShowNavbar] = useState(false);
+  // this function will show the navbar based on the scroll changed
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    setShowNavbar(currentScrollPos > 20);
   };
 
   useEffect(() => {
-    const checkYPosition = setInterval(floatingNavToggleHandler, 2000);
+    window.addEventListener("scroll", handleScroll);
 
-    // cleanup function
-    return () => clearInterval(checkYPosition);
-  }, [siteYPostion]);
+    // Cleanup function
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <main
-      // className={`${themeState.primary} ${themeState.background}`}
-      ref={mainRef}
-    >
-      <Navbar />
-      <ToastContainer></ToastContainer>
+    <main ref={mainRef}>
       <Header />
       <About />
       <Myskill />
       <Services />
       <Portfolio />
-      {/* <Testimonials /> */}
+
       <FAQs />
       <Contact />
       <Footer />
 
-      {showFloatingNav && <FloatingNav />}
+      {showNavbar && <Navbar />}
+      {showNavbar && <FloatingNav />}
+      <ToastContainer />
     </main>
   );
 };

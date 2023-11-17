@@ -4,7 +4,7 @@ header {
   display: grid;
   place-items: center;
   /* background: var(--color-white); */
-  background-image: linear-gradient(#dcdde1, #8c7ae6, #7f8fa6);
+  background-image: linear-gradient(#e1dddc, #8c7ae6, #7f8fa6);
   transition: var(--transition);
 }
 
@@ -14,16 +14,6 @@ header {
   align-items: center;
   position: relative;
 }
-/* 
-.header__profile {
-  width: 16rem;
-  height: 20rem;
-  border-radius: 6rem 6rem 2rem 2rem;
-  box-shadow: 3px 3px 4px 2px silver;
-  overflow: hidden;
-
-  margin-bottom: 1rem;
-} */
 .header__profile {
   position: relative;
   width: 16rem;
@@ -66,6 +56,9 @@ header {
   text-align: center;
   margin: 0.6rem 0 2rem;
   font-weight: bold;
+  letter-spacing: 1;
+
+  color: black;
 }
 
 .header__cta {
