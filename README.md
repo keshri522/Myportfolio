@@ -19,7 +19,7 @@ This is my Portfolio Website.
 - Feedback form
 - validation
 ## About Project
-- This is a Capstone Project - Flashcard Generater.
+- This is My Portfolio Website
 
 
 
