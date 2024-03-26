@@ -15,6 +15,9 @@ import Redux from "./pics/reduxpic.png";
 import sql from "./pics/sql.png";
 import github from "./pics/github.png";
 import Postman from "./pics/postman.png";
+import ReactQuery from "../myskill/pics/ReactQuery.png";
+import Next from "../myskill/pics/Nextjs.png";
+import Type from "../myskill/pics/ts.avif";
 const data = [
   { id: 1, title: "React", Image: React },
   {
@@ -59,6 +62,9 @@ const data = [
   { id: 15, title: "Axios", Image: axiox },
   { id: 16, title: "Postman", Image: Postman },
   { id: 17, title: "Github", Image: github },
+  { id: 18, title: "TypeScript", Image: Type },
+  { id: 19, title: "NextJs", Image: Next },
+  { id: 20, title: "ReactQuery", Image: ReactQuery },
 ];
 
 export default data;
