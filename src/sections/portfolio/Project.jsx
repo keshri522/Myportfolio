@@ -7,7 +7,7 @@ const Project = ({ project }) => {
         <img src={project.image} alt="Portfolio Project Image" />
       </div>
       <h4>{project.title}</h4>
-      <p>{project.desc}</p>
+      <p>{`${project.desc.substring(0, 300)}`}</p>
       <div className="portfolio__project-cta">
         <a
           href={project.demo}
