@@ -6,6 +6,7 @@ const data = [
   { id: 5, link: "#portfolio", title: "Projects" },
 
   { id: 6, link: "#contact", title: "Contact" },
+  { id: 7, link: "#Experience", title: "Experience" },
 ];
 
 export default data;

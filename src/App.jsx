@@ -11,7 +11,8 @@ import FloatingNav from "./sections/floating-nav/FloatingNav";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRef, useState, useEffect } from "react";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "react-vertical-timeline-component/style.min.css"; // this is for the verticle timeline component
 const App = () => {
   const mainRef = useRef();
   const [showNavbar, setShowNavbar] = useState(false);

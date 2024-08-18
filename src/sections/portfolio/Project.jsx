@@ -4,10 +4,17 @@ const Project = ({ project }) => {
   return (
     <Card className="portfolio__project">
       <div className="portfolio__project-image">
-        <img src={project.image} alt="Portfolio Project Image" />
+        <img src={project.image} alt="PortfolioProjectImage" />
       </div>
       <h4>{project.title}</h4>
-      <p>{`${project.desc.substring(0, 300)}`}</p>
+      <p style={{ fontSize: "15px" }}>
+        {`${project.desc.substring(0, 150)}`}{" "}
+        <span
+          style={{ fontSize: "10px", color: "blueviolet", cursor: "pointer" }}
+        >
+          ...Read More
+        </span>
+      </p>
       <div className="portfolio__project-cta">
         <a
           href={project.demo}

@@ -59,6 +59,14 @@
 .about__right .btn {
   margin-top: 2.5rem;
 }
+.modal-dialog {
+  max-width: 100%;
+}
+.modal.show .modal-dialog {
+  max-width: 75%;
+  transform: none;
+  margin: "auto";
+}
 
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 1200px) {

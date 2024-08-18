@@ -1,6 +1,5 @@
-import AboutImage from "../../assets/aboutpic.jpg";
 import Cerficates from "../../assets/certificate.png";
-import Cerficatepdf from "../../assets/pdf.pdf";
+
 import CV from "../../assets/MyResume.pdf";
 import { HiDownload } from "react-icons/hi";
 import data from "./data"; // this is the data importing
@@ -8,19 +7,28 @@ import Card from "../../components/Card";
 import "./about.css"; // this is style for this components only
 import AOS from "aos"; // this is the package which gives us some loading style
 import "aos/dist/aos.css"; // this is the css package which gives us more style
-import { useEffect } from "react";
-
+import { useEffect, useState } from "react";
+import ModalComponent from "../../Modal/customModal";
 const About = () => {
+  const [showModal, setShowModal] = useState(false);
   useEffect(() => {
     // we have use the style in this because once our page loads or mount then our useeffect will run
     AOS.init({ duration: 2000 });
   });
+  // this will show modal only on the experience session
+  const handleShowModal = (id) => {
+    if (id === 1) {
+      setShowModal(true);
+    }
+  };
+
+  const handleCloseModal = () => setShowModal(false);
   return (
     <section id="about" data-aos="fade-up">
       <div className="container about__container">
         <div className="about__left">
           <div className="about__portrait">
-            <img src={Cerficates} alt="About Image" />
+            <img src={Cerficates} alt="AboutImage" />
           </div>
           <div className="ok">
             <button
@@ -55,10 +63,22 @@ const About = () => {
             {data.map((item) => (
               <Card key={item.id} className="about__card">
                 <span className="about__card-icon">{item.icon}</span>
-                <h5>{item.title}</h5>
+                {item.id === 1 ? (
+                  <h5
+                    onClick={() => handleShowModal(item.id)}
+                    style={{ color: "#4A0CC6", cursor: "pointer" }}
+                  >
+                    {item.title}
+                  </h5>
+                ) : (
+                  <h5>{item.title}</h5>
+                )}
                 <small>{item.desc}</small>
               </Card>
             ))}
+            <div>
+              <ModalComponent show={showModal} handleClose={handleCloseModal} />
+            </div>
           </div>
           <p style={{ fontWeight: "bold" }}>
             Enthusiastic and results-driven MERN Stack Developer with a strong
