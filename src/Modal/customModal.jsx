@@ -4,7 +4,7 @@ import VerticaltimeLine from "./verticaltimeLine";
 import "../sections/about/about.css";
 const ModalComponent = ({ show, handleClose }) => {
   return (
-    <Modal show={show} onHide={handleClose}>
+    <Modal className="customModal" show={show} onHide={handleClose}>
       <Modal.Header style={{ backgroundColor: "#AA9FE4" }} closeButton>
         <Modal.Title>Experience Details</Modal.Title>
       </Modal.Header>

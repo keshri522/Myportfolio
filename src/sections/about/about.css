@@ -62,8 +62,8 @@
 .modal-dialog {
   max-width: 100%;
 }
-.modal.show .modal-dialog {
-  max-width: 75%;
+.customModal .modal-dialog {
+  max-width: 70%;
   transform: none;
   margin: "auto";
 }
@@ -89,7 +89,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
-
+  .customModal .modal-dialog {
+    max-width: 100%;
+    transform: none;
+    margin: "auto";
+  }
   .about__right .btn {
     margin-top: 2rem;
   }
