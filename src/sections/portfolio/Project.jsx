@@ -30,7 +30,7 @@ const Project = ({ project }) => {
           target="_blank"
           rel="noopner noreferrer"
         >
-          Gitbub
+          Github
         </a>
       </div>
     </Card>
